@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt
+months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+rainfall_values = [50, 40, 60, 30, 20, 25, 15, 30, 40, 55, 60, 45]
+plt.figure(figsize=(8, 5))  # Adjust the figure size if needed
+plt.scatter(months, rainfall_values, color='b', label='Monthly Rainfall')
+plt.title('Monthly Rainfall Data')
+plt.xlabel('Month')
+plt.ylabel('Rainfall (mm)')
+plt.legend()
+plt.grid(True)
+plt.show()
